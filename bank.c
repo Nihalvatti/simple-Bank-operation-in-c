@@ -152,8 +152,10 @@ int task(){
     int n;
     printf("\n\nSTEP 2");
     printf("\nWhat task would you like to perform:\n");
-    printf("1.Deposit                      2.withdrawal\n");
-    printf("3.Balance verification         4.Interest Calculation\n");
+     printf("1.Deposit \n");
+    printf("2.withdrawal \n");
+    printf("3.Balance verification\n");    
+	printf("4.Interest Calculation\n");
     printf("5.Exit\n");
     printf("Enter your choice: ");
     scanf("%d",&n);
@@ -215,13 +217,17 @@ scanf("%d",&g);
 
 int main(){
 int w,i,d,b,n,ac,bal,g;
+long long int hall;
 printf("\n\n\t\t\t\tWELCOME TO CBIT ONLINE BANKING SYSTEM\n");
 printf("\t\t\t\t_____________________________________\n");
 printf("STEP 1:\n");
+printf("Enter your Admission Number:");
+scanf("%lld",&hall);
 printf("Enter your A/C number: ");
 scanf("%d",&ac);
  n=task();
  if(n>5 || n<=0){
+ 	printf("\n");
     printf("enter a proper choice\n");
     n=task();
     choice(ac);
